@@ -1,9 +1,17 @@
 class Main {
   public static void main(String[] args) {
-    int[] data={5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100};
-    for(int i=0;i<20;i++){
-     System.out.println(data[i]);
-  } 
+    int[]data=new int [101];
+    int count=0;
+    for(int i=0;i<=100;i++){
+        data[count]=i;
+          count=count+1;
     }
-    
+    for(int i=0;i<101;i++){
+      //System.out.println(data[i]);
+
+if (data[i] %5==0){
+  System.out.println(data[i]);
+}
+    }
   }
+}
